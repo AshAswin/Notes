@@ -1,0 +1,52 @@
+Running a python program in cluster
+
+To run a python program you have we are going to use anaconda environment
+
+Installing Anaconda
+
+Commands:
+===========================================
+mkdir downloads
+cd downloads
+wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
+bash Anaconda3-5.1.0-Linux-x86_64.sh
+vim ~/.bashrc
+===========================================
+
+paste the contents from file ".bashrc_append" from Nithish's github account 
+"https://gist.github.com/nitred/714f15f24c67e1c91b7efc106bc535c6"
+
+===========================================
+vim ~/.conda_bashrc3
+===========================================
+
+paste the contents from file .conda_bashrc3 from Nithish's github account 
+"https://gist.github.com/nitred/714f15f24c67e1c91b7efc106bc535c6"
+
+===========================================
+vim ~/.bash_aliases
+===========================================
+
+paste the contents from file .conda_bashrc3 from Nithish's github account 
+"https://gist.github.com/nitred/714f15f24c67e1c91b7efc106bc535c6"
+
+===========================================
+source ~/.bashrc
+anaconda3
+===========================================
+
+Now we are in the anaconda environment
+
+===========================================
+cd ..
+mkdir projects
+cd projects
+mkdir hello_world
+cd hello_world
+vim hello_world.py
+python hello_world.py
+===========================================
+
+Hurray! done
+
+
