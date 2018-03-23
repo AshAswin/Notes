@@ -1,3 +1,5 @@
+source:https://serverfault.com/questions/24523/meaning-of-directories-on-unix-and-unix-like-systems
+
 For more data on the layout of Linux file-systems, 
 look at the Filesystem Hierarchy Standard(now at version 2.3, with the beta 3.0 version deployed on most recent distros). 
 It does explain some of where the names came from:
