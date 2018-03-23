@@ -1,0 +1,36 @@
+For more data on the layout of Linux file-systems, 
+look at the Filesystem Hierarchy Standard(now at version 2.3, with the beta 3.0 version deployed on most recent distros). 
+It does explain some of where the names came from:
+
+/bin - Binaries.
+
+/boot - Files required for booting.
+
+/dev - Device files.
+
+/etc - Etcctera. The name is inherited from the earliest Unixes, which is when it became the spot to put config-files.
+
+/home - Where Home directories are kept.
+
+/lib - Where code libraries are kept.
+
+/media - A more modern directory, but where removable media gets mounted.
+
+/mnt - Where temporary file-systems are mounted.
+
+/opt - Where opttional add-on software is installed. This is discrete from /usr/local/ for reasons I'll get to later.
+
+/run - Where runtime variable data is kept.
+
+/sbin - Where super-binaries are stores. These usually only work with root.
+
+/usr - Another directory inherited from the Unixes of old, it stands for "user". 
+This directory should be sharable between hosts, and can be NFS mounted to multiple hosts safely. 
+It can be mounted read-only safely. Also as per Debian Wiki, /usr is UNIX System Resources.
+
+/var - Another directory inherited from the Unixes of old, it stands for "variable". 
+This is where system data that varies may be stored. Such things as spool and cache directories may be located here. 
+If a program needs to write to the local file-system and isn't serving that data to someone directly, it'll go here.
+
+/srv - Stands for "serve". This directory is intended for static files that are served out. 
+/srv/http would be for static websites, /srv/ftp for an FTP server.
